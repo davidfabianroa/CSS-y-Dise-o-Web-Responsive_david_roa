@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	font-family: "dancing script";
+	
+}
+header
+{
+	width: 100%;
+	height: 20vh;
+	background-color: #5b7989;
+	border-radius: 10px ;
+	position: fixed;
+    top: 0px;
+	left: 0px;
+	
+	
+	
+}
+.titulo
+{
+	float: left;
+	margin-top: 6vh;
+	color: white;
+	font-size: 6vmin;
+	text-shadow: 2px 2px 2px #02010a;
+	
+}
+#menu_principal
+{
+	float: right;
+	word-spacing: 2vw;
+	font-size: 4vmin;
+	margin-top: 7vh;
+	
+}
+a{
+	text-decoration: none; 
+	color: white; 
+	
+}
