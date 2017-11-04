@@ -41,7 +41,7 @@ header
 	margin-top: 7vh;
 	
 }
-	a
+	#menu_principal a
 	{
 
 		color: white; 
@@ -78,6 +78,7 @@ header
 		border: 1px solid;
 		width:  50%;
 	}
+
 	#retratos
 	{
 		background-color: #d5c75f;
@@ -85,14 +86,37 @@ header
 		width:  50%;
 		
 	}
+	#contenedor a
+	{
+		color: black;
+		font-size: 15vmin;
+	}
 	[alt=retratos]
 	{
-		width: 50%;		
-	}
+		width: 50%;	
+		transition-property: box-shadow, border, transform;
+		transition-duration: 2s;
+		}
+		[alt=retratos]:hover
+		{
+			box-shadow: 2px 2px 7px 8px #82c3a6;
+			border: 2px solid;
+			transform: translate(20px, -5px);
+	
+		}
+		
 	[alt=paisajes]
 	{
-		width: 74%;		
+		width: 74%;
+		transition-property: box-shadow, border, transform;
+		transition-duration: 2s;
 	}
+		[alt=paisajes]:hover
+		{
+			transform: rotate(10deg);
+			box-shadow: 2px 2px 5px 5px #82c3a6;
+			border: 2px solid;
+		}
 	[alt=paraiso]
 	{
 		width: 50%;		
