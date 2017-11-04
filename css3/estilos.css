@@ -9,6 +9,7 @@
 body
 {
 	font-family: "dancing script";
+	width: 100%;
 	
 }
 header
@@ -16,12 +17,10 @@ header
 	width: 100%;
 	height: 20vh;
 	background-color: #5b7989;
-	border-radius: 10px ;
-   	margin: 0 auto;
-	
-	
-	
+	border-radius:  10px 10px 0 0;
+   	margin: 0 auto;	
 }
+
 .titulo
 {
 	float: left;
@@ -32,6 +31,7 @@ header
 	text-shadow: 2px 2px 2px #02010a;
 	
 }
+
 #menu_principal
 {
 	float: right;
@@ -41,15 +41,59 @@ header
 	margin-top: 7vh;
 	
 }
-a
+	a
+	{
+
+		color: white; 
+		text-decoration: none;
+
+	}
+#contenedor
 {
-	 
-	color: white; 
-	text-decoration: none;
-	
+	width: 100%;
+	margin: 0 auto;
 }
-#paraiso
-{
-	text-align: center;
-	background-color: #82c3a6;
-}
+	article 
+	{
+		box-sizing: border-box;
+		float:left;
+		height: 100%;
+		text-align: center;
+		
+
+	}
+	img
+	{
+		margin-top: 2vmin
+	}
+
+	#paraiso 
+	{
+		background-color: #82c3a6;
+		width: 100%;
+	}
+	#paisajes
+	{
+		background-color: #d5c75f;
+		border: 1px solid;
+		width:  50%;
+	}
+	#retratos
+	{
+		background-color: #d5c75f;
+		border: 1px solid;
+		width:  50%;
+		
+	}
+	[alt=retratos]
+	{
+		width: 50%;		
+	}
+	[alt=paisajes]
+	{
+		width: 74%;		
+	}
+	[alt=paraiso]
+	{
+		width: 50%;		
+	}
