@@ -17,34 +17,44 @@ body
 img
 {
 	box-shadow: 2px 2px 10px 3px #02010a;
+	margin: 2vmin;
 }
 header
 {
-	width: 100%;
-	height: 20vh;
+	width: 900px;
+	height: auto;
 	background-color: #5b7989;
 	border-radius:  10px 10px 0 0;
    	margin: 0 auto;	
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+	flex-wrap: wrap;
+	
 }
 
 .titulo
 {
-	float: left;
-	margin-top: 6vh;
+	
+	
 	margin-left: 2vw;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	color: white;
-	font-size: 6vmin;
+	font-size: 7vmin;
 	text-shadow: 2px 2px 2px #02010a;
 	
 }
 
 #menu_principal
 {
-	float: right;
-	margin-right: 2vw;
+	
+	
 	word-spacing: 2vw;
-	font-size: 4vmin;
-	margin-top: 7vh;
+	font-size: 3vmin;
+	margin-right: 2vw;
+	
+	
 	
 }
 
@@ -57,15 +67,15 @@ header
 	}
 #contenedor
 {
-	width: 100%;
-	height: 100%;
+	width: 900px;
+	height: auto;
 	margin: 0 auto;
 	
 }
 	
 	article 
 	{
-		box-sizing: border-box;
+		box-sizing:border-box;
 		float:left;
 		height: 100%;
 		text-align: center;
@@ -73,10 +83,7 @@ header
 		
 
 	}
-	img
-	{
-		margin-top: 2vmin
-	}
+	
 
 	#paraiso 
 	{
@@ -97,105 +104,227 @@ header
 		width:  50%;
 		
 	}
-	#contenedor a
-	{
-		color: black;
-		font-size: 15vmin;
-	}
-	[alt=retratos]
-	{
-		width: 50%;	
-		transition-property: box-shadow, border, transform;
-		transition-duration: 2s;
-		}
-		[alt=retratos]:hover
+		#contenedor a
 		{
-			box-shadow: 2px 2px 7px 8px #82c3a6;
-			border: 2px solid;
-			transform: translate(20px, -5px);
-	
+			color: black;
+			font-size: 7vmin;
 		}
-		
-	[alt=paisajes]
-	{
-		width: 74%;
-		transition-property: box-shadow, border, transform;
-		transition-duration: 2s;
-	}
-		[alt=paisajes]:hover
+			[alt=retratos]
 		{
-			transform: rotate(10deg);
-			box-shadow: 2px 2px 5px 5px #82c3a6;
-			border: 2px solid;
+			width: 50%;	
+			transition-property: box-shadow, border, transform;
+			transition-duration: 2s;
+			
+			}
+			[alt=retratos]:hover
+			{
+				
+				box-shadow: 2px 2px 7px 8px #82c3a6;
+				border: 2px solid;
+				transform: translate(20px, -5px);
+
+			}
+
+		[alt=paisajes]
+		{
+			width: 74%;
+			transition-property: box-shadow, border, transform;
+			transition-duration: 2s;
+			
 		}
-	[alt=paraiso]
-	{
-		width: 50%;		
-	}
+			[alt=paisajes]:hover
+			{
+				transform: rotate(10deg);
+				box-shadow: 2px 2px 5px 5px #82c3a6;
+				border: 2px solid;
+				
+			}
+		[alt=paraiso]
+		{
+			width: 50%;		
+		}
 	footer
 	{
 		width: 100%;
-		height: 40vh;
+		height: auto;
 		background-color: #C6d5c5;
 		border-radius:  0px 0px 10px 10px;
 		float: left;
 	}
 		.pie
 		{
-			display: flex;			
-			text-align: center;
-			margin-top: 10px;			
-			height: 90%;
+						
+			text-align: center;			
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			justify-content: space-between;
 							
 		}
 			.columna
 			{
-				flex:1;
+				
+				flex: 1 1;
+				
 			}
 
 
-		ul
+		#contacto
 		{
-			list-style: none;
-			height: 25vh;
 			text-align: left;
-			font-size: 4vmin;
+			margin-left: 3%;
+			height: auto;
+			width: 90%;
 			display: flex;
 			flex-direction: column;
+			
 
 		}
-		footer #enlace_pie, .redes figcaption,  #Copyright
-		{
-			text-decoration: none;
-			font-size: 4vmin;
+		footer #enlace_pie, .redes figcaption,  #Copyright, p
+{
+			
+	font-size: 3vmin;
 
-		}
-		h2
-		{
-			font-size: 8vmin;
-		}
-p
+}
+h2
 {
 	font-size: 5vmin;
+	margin-top: 10px;
 }
-[src$="svg"]
-{
-	height: 4vw;
-}
+
+
 #contenedor_redes
-{
-	height: 25vh;
+{	margin: 0;
 	display: flex;
 	align-items: center;
-	justify-content:space-around
+	justify-content:space-around;
 }
+	[src$="svg"]
+	{
+		height: 4vw;
+	}
 #Copyright
 {
-	height: 25vh;
 	display: flex;
 	flex-direction: column;
 	justify-content:space-around;
+	height: auto;
+	margin-top: 5%;
+	width: 100%;
+	
 	
 }
+@media screen and (max-width: 900px)
+{
+	header
+	{
+		width: 100%
+	}
+	.titulo
+	{
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		padding-top: 2%;
+		font-size: 200%
+		
+		
+	}
+	#menu_principal
+	{
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		font-size: 200%
+		
+		
+	}
+	#contenedor 
+	{
+		width: 100%;
+		 
+	}
+	#paisajes
+	{
+		width: 100%;
+		
+		
+	}
+	#retratos
+	{
+		width: 100%
+	}
+	[alt=paraiso]
+	{
+		width: 70%;
+		margin: 5%;
+		
+	}
+	[alt=paisajes]
+	{
+		width: 70%;
+		margin-top: 5%;
+		
+	}
+	[alt=retratos]
+	{
+		width: 60%;
+		margin-top: 5%;
+	}	
+		
+	
+	.pie
+	{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 10%; 
+	
+	}
+	.columna
+	{
+		margin-top: 10%;
+		margin-left: 7%;
+		margin-bottom: 10%;
+	}
+	#contacto
+	{
+		margin: 0;
+	}
+	#contenedor_redes
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 0;
+	}
+h2
+	{
+		font-size: 250%;
+	}
+footer p  
+	{
+		font-size: 150%;
+	}
+footer #enlace_pie, #Copyright 
+	{
+		font-size: 100%;
+	}
+.redes figcaption
+	{
+		font-size: 100%;
+			
+	}
+	[src$="svg"]
+	{
+		height: 20vw;
+	}
+	.cuerpo figcaption
+	{
+		font-size: 150%
+	}
+}
+
+
 
 	
