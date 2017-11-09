@@ -214,11 +214,15 @@ h2
 	
 	
 }
+#aux
+{
+	width: 900px;
+	margin: 0 auto;
+}
 .contenido
 {
 	display: flex;
-	width: 900px;
-	margin: 0 auto;
+	
 	background-color: #d5c75f;
 	
 	
@@ -256,6 +260,18 @@ h2
 	filter: sepia(90%);
 	-webkit-filter: sepia(90%)
 }
+#colorcon
+	{
+		color: black;
+		
+		
+		
+	}
+.color
+	{
+		color: black;
+		
+	}
 @media screen and (max-width: 900px)
 {
 	header
@@ -375,6 +391,11 @@ footer #enlace_pie, #Copyright
 	
 	
 }
+	#aux
+	{
+		margin: 0 auto;
+		width: auto;
+	}
 	.bloque
 	{
 		margin: 0 auto;
@@ -406,6 +427,19 @@ footer #enlace_pie, #Copyright
 		-webkit-filter: sepia(0%);
 		filter: sepia(0%);
 	}
+	#colorcon
+	{
+		color: black;
+		font-size: 5vw;
+		
+		
+	}
+	.color
+	{
+		color: black;
+		font-size: 4vw;
+	}
+	
 }
 
 
